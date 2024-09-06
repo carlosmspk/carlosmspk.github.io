@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.fullscreen-grid {
+  display: grid;
+  place-items: center;
+  height: 95vh;
+  background-color: transparent;
+}
+
+.headliner {
+  font-size: 92px;
+  animation: spacing 20s alternate infinite, color-shift 4s alternate infinite;
+}
+
+body {
+  background-color: #444;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+  color: antiquewhite;
+}
+
+@keyframes spacing {
+  0% {
+    letter-spacing: inherit;
+  }
+  50% {
+    letter-spacing: 10px;
+  }
+  100% {
+    letter-spacing: inherit;
+  }
+}
+
+@keyframes color-shift {
+  0% {
+    color: inherit;
+  }
+  50% {
+    color: rgb(254, 198, 86);
+  }
+  100% {
+    color: inherit;
+  }
+}
